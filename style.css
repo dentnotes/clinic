@@ -45,15 +45,15 @@
       position: relative; /* Add this line */
         }
 
-        header {
-            background-color: #3498db;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-			font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-        }
+       header {
+    background-color: #3498db; /* Green header */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif;
+}
 
         main {
             width: 100%;
@@ -148,7 +148,44 @@
     cursor: pointer;
     width: 100%;
 }
-
+	.toggle-button56 {
+    background-color: indianred; /* Updated color: A nice shade of blue */
+    
+    font-weight: 400;
+    color: white;
+   
+    font-size: 0.938rem;
+    line-height: 2.0;
+    list-style:lower-latin
+    box-sizing: border-box;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    position: relative;
+    display: block;
+    float: left;
+ right: 0%;
+    border-bottom: 5px solid #f9f9f9;
+    cursor: pointer;
+    width: 40%;
+}
+	.toggle-button567 {
+    background-color: indianred; /* Updated color: A nice shade of blue */
+    
+    font-weight: 400;
+    color: white;
+   
+    font-size: 0.938rem;
+    line-height: 2.0;
+    list-style:lower-latin
+    box-sizing: border-box;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    position: relative;
+    display: block;
+    float: left;
+ right: -10%;
+    border-bottom: 5px solid #f9f9f9;
+    cursor: pointer;
+    width: 40%;
+}
 
 
         textarea {
@@ -224,11 +261,50 @@
            border-radius: 4px;
            cursor: pointer;
            font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-            position: absolute;
-            left: 110px;
-   
-       
+            position: fixed;
+           left: 56%;;
 }
+
+
+.finalize:hover::after {
+  content: "Click this button to allow editing in text area. You will not be able to edit left section. If you disable button and edit on left, all your custom notes will be deleted.";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+    width: 400%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #888;
+  border-top: none;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.finalize::after {
+ content: "Click this button to allow editing in text area. You will not be able to edit left section. If you disable button and edit on left, all your custom notes will be deleted.";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+     width: 400%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #888;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.finalize:hover{
+  border: 1px solid #888;
+  background-color: #3498db;
+ transition: visibility 0.002s;
+}
+
 
 
    table {

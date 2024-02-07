@@ -11,7 +11,7 @@ function myFinalize() {
     var container = document.getElementById('checkboxes');
 
     // Get all input elements inside the container
-    var inputs = container.querySelectorAll('input, select, textarea, button');
+    var inputs = container.querySelectorAll('input, select, textarea');
 
     // Disable each input element
     inputs.forEach(function(input) {
@@ -25,7 +25,7 @@ function myFinalize() {
       var container = document.getElementById('checkboxes');
   
       // Get all input elements inside the container
-      var inputs = container.querySelectorAll('input, select, textarea, button');
+      var inputs = container.querySelectorAll('input, select, textarea');
   
       // Disable each input element
       inputs.forEach(function(input) {
@@ -88,7 +88,9 @@ Spry.$$("#button400").addEventListener('click', function(e){ toggleSection('peri
 	Spry.$$("#button401").addEventListener('click', function(e){ toggleSection('eteethSection1') }, false);	
 	Spry.$$("#button402").addEventListener('click', function(e){ toggleSection('elistSection1') }, false);
     	Spry.$$("#button403").addEventListener('click', function(e){ toggleSection('adayr41Section1') }, false);
-
+    	Spry.$$("#button4034").addEventListener('click', function(e){ toggleSection('dentureguidessection') }, false);
+	
+    
 	function getElementsWithClass(TEST) {
     const elements = {};
     document.querySelectorAll(`.${TEST}`).forEach(element => {
@@ -100,7 +102,9 @@ Spry.$$("#button400").addEventListener('click', function(e){ toggleSection('peri
 // Use the function to get all elements with the "auto-element" class
 const autoElements = getElementsWithClass('TEST');	
 	
-	
+
+
+
 	
     // Get references to HTML elements
 	  const generatedText = document.getElementById('generatedText');
@@ -700,8 +704,8 @@ button.addEventListener("click",myFunction);
 
 addEventListener('change', generateText);
 	
-	
-	
+	generatedText2.addEventListener('input', generateText);
+		generatedText1.addEventListener('input', generateText);
 
     // Function to generate text based on selected options
  function generateText() {
